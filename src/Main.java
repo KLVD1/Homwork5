@@ -6,10 +6,10 @@ public class Main {
         int clientOS = 0;// 0 — iOS, 1 — Android
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else  (clientOS == 1) {
+        } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }else{
-            System.out.println("Операционная система не опознана ");
+            System.out.println("Операционная система не распознана");
         }
 
         System.out.println("\n\tЗадание#2\n");
