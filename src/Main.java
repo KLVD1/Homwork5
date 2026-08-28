@@ -8,6 +8,8 @@ public class Main {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
+        }else{
+            System.out.println("Операционная система не опознана ");
         }
 
         System.out.println("\n\tЗадание#2\n");
@@ -36,44 +38,45 @@ public class Main {
         int deliveryDays = 0; // количество дней
         if (deliveryDistance > 100) {
             System.out.println("Доставка невозможна: расстояние свыше 100 км.");
-        } else if (deliveryDistance <= 20){
+        } else if (deliveryDistance <= 20) {
             deliveryDays = 1;
             System.out.println("Потребуется дней: " + deliveryDays);
-        } else if (deliveryDistance <=60){
-            deliveryDays=2;
+        } else if (deliveryDistance <= 60) {
+            deliveryDays = 2;
             System.out.println("Потребуется дней: " + deliveryDays);
-        }else { // от 61 до 100 км
+        } else { // от 61 до 100 км
             deliveryDays = 3;
             System.out.println("Потребуется дней: " + deliveryDays);
         }
 
         System.out.println("\n\tЗадание#5\n");
 
-        int monthNumber=10; // номер месяца
-        switch (monthNumber){
+        int monthNumber = 10; // номер месяца
+        switch (monthNumber) {
             case 1:
             case 2:
             case 12:
-                System.out.println( monthNumber+" месяц "+ "принадлежит к сезону Зима");
+                System.out.println(monthNumber + " месяц " + "принадлежит к сезону Зима");
                 break;
             case 3:
             case 4:
             case 5:
-                System.out.println( monthNumber+" месяц "+ "принадлежит к сезону Весна");
+                System.out.println(monthNumber + " месяц " + "принадлежит к сезону Весна");
                 break;
             case 6:
             case 7:
             case 8:
-                System.out.println( monthNumber+" месяц "+ "принадлежит к сезону Лето");
+                System.out.println(monthNumber + " месяц " + "принадлежит к сезону Лето");
                 break;
             case 9:
             case 10:
             case 11:
-                System.out.println( monthNumber+" месяц "+ "принадлежит к сезону Осень");
+                System.out.println(monthNumber + " месяц " + "принадлежит к сезону Осень");
                 break;
             default:
-                System.out.println( "Такого сезона не существует");
+                System.out.println("Такого сезона не существует");
         }
 
 
-    }}
+    }
+}
